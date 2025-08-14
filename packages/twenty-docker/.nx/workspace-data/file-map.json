@@ -1,0 +1,231 @@
+{
+  "version": "6.0",
+  "nxVersion": "21.3.11",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {},
+    "nonProjectFiles": [
+      {
+        "file": ".env.example",
+        "hash": "2125563247656448302"
+      },
+      {
+        "file": "Makefile",
+        "hash": "4992190839005615659"
+      },
+      {
+        "file": "SWC",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "docker-compose.yml",
+        "hash": "5662055065869694668"
+      },
+      {
+        "file": "grafana/provisioning/datasources/clickhouse-datasource.yaml",
+        "hash": "7793480011818386972"
+      },
+      {
+        "file": "k8s/README.md",
+        "hash": "8465209814521589035"
+      },
+      {
+        "file": "k8s/manifests/deployment-db.yaml",
+        "hash": "2862687769256226730"
+      },
+      {
+        "file": "k8s/manifests/deployment-redis.yaml",
+        "hash": "1835550130765948718"
+      },
+      {
+        "file": "k8s/manifests/deployment-server.yaml",
+        "hash": "2801138359932537887"
+      },
+      {
+        "file": "k8s/manifests/deployment-worker.yaml",
+        "hash": "7586499503577366590"
+      },
+      {
+        "file": "k8s/manifests/ingress.yaml",
+        "hash": "5126343043859404454"
+      },
+      {
+        "file": "k8s/manifests/pv-db.yaml",
+        "hash": "138077099900324128"
+      },
+      {
+        "file": "k8s/manifests/pv-docker-data.yaml",
+        "hash": "8871362960303795321"
+      },
+      {
+        "file": "k8s/manifests/pv-server.yaml",
+        "hash": "16344646954977509279"
+      },
+      {
+        "file": "k8s/manifests/pvc-db.yaml",
+        "hash": "4627859166539876088"
+      },
+      {
+        "file": "k8s/manifests/pvc-docker-data.yaml",
+        "hash": "1308153684231097608"
+      },
+      {
+        "file": "k8s/manifests/pvc-server.yaml",
+        "hash": "17309724294314713457"
+      },
+      {
+        "file": "k8s/manifests/service-db.yaml",
+        "hash": "5358890422211042452"
+      },
+      {
+        "file": "k8s/manifests/service-redis.yaml",
+        "hash": "465792281115749515"
+      },
+      {
+        "file": "k8s/manifests/service-server.yaml",
+        "hash": "7211394624400490526"
+      },
+      {
+        "file": "k8s/terraform/.terraform-docs.yml",
+        "hash": "8097138529744556656"
+      },
+      {
+        "file": "k8s/terraform/README.md",
+        "hash": "15891543954024146057"
+      },
+      {
+        "file": "k8s/terraform/deployment-db.tf",
+        "hash": "2540537871154491110"
+      },
+      {
+        "file": "k8s/terraform/deployment-redis.tf",
+        "hash": "3677412587930581890"
+      },
+      {
+        "file": "k8s/terraform/deployment-server.tf",
+        "hash": "9002457516640902482"
+      },
+      {
+        "file": "k8s/terraform/deployment-worker.tf",
+        "hash": "11343323450876230624"
+      },
+      {
+        "file": "k8s/terraform/ingress.tf",
+        "hash": "18418478080567795966"
+      },
+      {
+        "file": "k8s/terraform/main.tf",
+        "hash": "3473317575869720615"
+      },
+      {
+        "file": "k8s/terraform/namespace.tf",
+        "hash": "2102653388723496266"
+      },
+      {
+        "file": "k8s/terraform/pv-db.tf",
+        "hash": "8413280110337211961"
+      },
+      {
+        "file": "k8s/terraform/pv-docker-data.tf",
+        "hash": "3290664363626100759"
+      },
+      {
+        "file": "k8s/terraform/pv-server.tf",
+        "hash": "15788516610258124168"
+      },
+      {
+        "file": "k8s/terraform/pvc-db.tf",
+        "hash": "9445220900925502398"
+      },
+      {
+        "file": "k8s/terraform/pvc-docker-data.tf",
+        "hash": "12601544846203023165"
+      },
+      {
+        "file": "k8s/terraform/pvc-server.tf",
+        "hash": "16077184448607620186"
+      },
+      {
+        "file": "k8s/terraform/secret.tf",
+        "hash": "15378714366095400906"
+      },
+      {
+        "file": "k8s/terraform/service-db.tf",
+        "hash": "3739265410542537093"
+      },
+      {
+        "file": "k8s/terraform/service-redis.tf",
+        "hash": "1332686487107767405"
+      },
+      {
+        "file": "k8s/terraform/service-server.tf",
+        "hash": "16263563208069484201"
+      },
+      {
+        "file": "k8s/terraform/variables.tf",
+        "hash": "11913682236640178635"
+      },
+      {
+        "file": "nest",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "nx",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "otel-collector/otel-collector-config.yaml",
+        "hash": "14377878028182442493"
+      },
+      {
+        "file": "podman/README.md",
+        "hash": "18180584086418027720"
+      },
+      {
+        "file": "podman/install-systemd-user-service",
+        "hash": "5458056306440618039"
+      },
+      {
+        "file": "podman/manual-steps-to-deploy-twenty-on-podman",
+        "hash": "6227084222140663928"
+      },
+      {
+        "file": "podman/podman-compose.yml",
+        "hash": "10180626495545367255"
+      },
+      {
+        "file": "podman/twentycrm.service",
+        "hash": "17515913099259539903"
+      },
+      {
+        "file": "rimraf",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "scripts/1-click.sh",
+        "hash": "13681819435919536196"
+      },
+      {
+        "file": "scripts/install.sh",
+        "hash": "2543199809232137510"
+      },
+      {
+        "file": "twenty-postgres-spilo/Dockerfile",
+        "hash": "8108105087008118769"
+      },
+      {
+        "file": "twenty-website/Dockerfile",
+        "hash": "6651171370758357190"
+      },
+      {
+        "file": "twenty/Dockerfile",
+        "hash": "874596848587143526"
+      },
+      {
+        "file": "twenty/entrypoint.sh",
+        "hash": "8377419599009281352"
+      }
+    ]
+  }
+}
