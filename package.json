@@ -24,7 +24,8 @@
     ]
   },
   "scripts": {
-    "start": "npx concurrently --kill-others \"npx nx run-many -t start -p twenty-server twenty-front\" \"npx wait-on tcp:3000 && npx nx run twenty-server:worker\""
+    "start": "npx concurrently --kill-others \"npx nx run-many -t start -p twenty-server twenty-front\" \"npx wait-on tcp:3000 && npx nx run twenty-server:worker\"",
+    "start:prod": "cd packages/twenty-server && node dist/src/main.js"
   },
   "dependencies": {
     "@apollo/client": "^3.7.17",
