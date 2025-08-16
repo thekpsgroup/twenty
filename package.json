@@ -1,5 +1,31 @@
 {
   "private": true,
+  "name": "twenty",
+  "version": "0.2.1",
+  "license": "AGPL-3.0",
+  "packageManager": "yarn@4.9.2",
+  "engines": {
+    "node": "^24.5.0",
+    "npm": "please-use-yarn",
+    "yarn": ">=4.0.2"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/twenty-front",
+      "packages/twenty-server",
+      "packages/twenty-emails",
+      "packages/twenty-ui",
+      "packages/twenty-utils",
+      "packages/twenty-zapier",
+      "packages/twenty-website",
+      "packages/twenty-e2e-testing",
+      "packages/twenty-shared",
+      "tools/eslint-rules"
+    ]
+  },
+  "scripts": {
+    "start": "npx concurrently --kill-others \"npx nx run-many -t start -p twenty-server twenty-front\" \"npx wait-on tcp:3000 && npx nx run twenty-server:worker\""
+  },
   "dependencies": {
     "@apollo/client": "^3.7.17",
     "@emotion/react": "^11.11.1",
@@ -84,6 +110,7 @@
     "@graphql-codegen/typescript": "^3.0.4",
     "@graphql-codegen/typescript-operations": "^3.0.4",
     "@graphql-codegen/typescript-react-apollo": "^3.3.7",
+    "@nestjs/cli": "^11.0.10",
     "@nx/eslint": "21.3.11",
     "@nx/eslint-plugin": "21.3.11",
     "@nx/jest": "21.3.11",
@@ -192,7 +219,7 @@
     "playwright": "^1.46.0",
     "prettier": "^3.1.1",
     "raw-loader": "^4.0.2",
-    "rimraf": "^5.0.5",
+    "rimraf": "^6.0.1",
     "source-map-support": "^0.5.20",
     "storybook": "8.6.14",
     "storybook-addon-cookie": "^3.2.0",
@@ -210,14 +237,6 @@
     "vite-plugin-svgr": "^4.2.0",
     "vitest": "1.4.0"
   },
-  "engines": {
-    "node": "^24.5.0",
-    "npm": "please-use-yarn",
-    "yarn": ">=4.0.2"
-  },
-  "license": "AGPL-3.0",
-  "name": "twenty",
-  "packageManager": "yarn@4.9.2",
   "resolutions": {
     "graphql": "16.8.0",
     "type-fest": "4.10.1",
@@ -226,23 +245,5 @@
     "prosemirror-view": "1.40.0",
     "prosemirror-transform": "1.10.4"
   },
-  "version": "0.2.1",
-  "nx": {},
-  "scripts": {
-    "start": "npx concurrently --kill-others 'npx nx run-many -t start -p twenty-server twenty-front' 'npx wait-on tcp:3000 && npx nx run twenty-server:worker'"
-  },
-  "workspaces": {
-    "packages": [
-      "packages/twenty-front",
-      "packages/twenty-server",
-      "packages/twenty-emails",
-      "packages/twenty-ui",
-      "packages/twenty-utils",
-      "packages/twenty-zapier",
-      "packages/twenty-website",
-      "packages/twenty-e2e-testing",
-      "packages/twenty-shared",
-      "tools/eslint-rules"
-    ]
-  }
+  "nx": {}
 }
