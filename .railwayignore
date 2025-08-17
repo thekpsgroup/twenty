@@ -5,7 +5,6 @@ node_modules/
 .vscode/
 .cursor/
 .nx/
-.yarn/
 
 # Test files
 **/*.test.ts
