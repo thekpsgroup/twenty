@@ -4,7 +4,7 @@ buildCommand = "yarn install"
 
 [deploy]
 startCommand = "cd packages/twenty-server && node dist/src/main.js"
-healthcheckPath = "/health"
+healthcheckPath = "/healthz"
 healthcheckTimeout = 300
 restartPolicyType = "on_failure"
 restartPolicyMaxRetries = 3
