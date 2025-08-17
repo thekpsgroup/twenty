@@ -1,0 +1,71 @@
+# Development files
+node_modules/
+.git/
+.github/
+.vscode/
+.cursor/
+.nx/
+.yarn/
+
+# Test files
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.ts
+**/*.spec.tsx
+**/__tests__/
+**/__mocks__/
+**/test/
+**/tests/
+
+# Documentation
+**/*.md
+**/*.mdx
+docs/
+documentation/
+
+# Build artifacts (keeping dist/ for Railway builds)
+build/
+.next/
+.nuxt/
+
+# Logs
+*.log
+logs/
+
+# Environment files
+.env*
+!.env.example
+
+# IDE files
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker files (not needed for Railway)
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# CI/CD files
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# Storybook
+.storybook/
+**/*.stories.ts
+**/*.stories.tsx
+
+# E2E testing
+packages/twenty-e2e-testing/
+
+# Website (not needed for server)
+packages/twenty-website/
+
+# Development tools
+tools/
+scripts/
