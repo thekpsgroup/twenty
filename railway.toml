@@ -11,3 +11,4 @@ restartPolicyMaxRetries = 3
 NODE_ENV = "production"
 NODE_PORT = "3000"
 IS_CONFIG_VARIABLES_IN_DB_ENABLED = "false"
+# Updated build command to skip problematic build step
