@@ -1,0 +1,15 @@
+[build]
+builder = "nixpacks"
+buildCommand = "yarn install && npx nx build twenty-server"
+
+[deploy]
+startCommand = "cd packages/twenty-server && node dist/src/main.js"
+healthcheckPath = "/health"
+healthcheckTimeout = 300
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3
+
+[variables]
+NODE_ENV = "production"
+NODE_PORT = "3000"
+IS_CONFIG_VARIABLES_IN_DB_ENABLED = "false"
