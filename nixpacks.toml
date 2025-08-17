@@ -1,5 +1,5 @@
 [phases.build]
-cmds = ["yarn install", "npx nx build twenty-server"]
+cmds = ["yarn install"]
 
 [start]
 cmd = "cd packages/twenty-server && node dist/src/main.js"
