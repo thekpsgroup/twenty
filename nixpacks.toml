@@ -1,3 +1,6 @@
+[phases.setup]
+nixPkgs = ["nodejs_24"]
+
 [phases.build]
 cmds = ["yarn install", "npx nx build twenty-server"]
 
