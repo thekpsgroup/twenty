@@ -1,6 +1,6 @@
 [build]
 builder = "nixpacks"
-buildCommand = "yarn install && npx nx build twenty-server"
+buildCommand = "yarn install"
 
 [deploy]
 startCommand = "cd packages/twenty-server && node dist/src/main.js"
