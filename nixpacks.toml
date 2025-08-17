@@ -1,11 +1,5 @@
-[phases.setup]
-nixPkgs = ["nodejs_18"]
-
-[phases.install]
-cmds = ["yarn install"]
-
 [phases.build]
-cmds = ["npx nx build twenty-server"]
+cmds = ["yarn install", "npx nx build twenty-server"]
 
 [start]
 cmd = "cd packages/twenty-server && node dist/src/main.js"
